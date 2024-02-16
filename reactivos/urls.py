@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-
+from .views import reactivos
 urlpatterns = [
-
+path("",reactivos, name='reactivos')
 ]
